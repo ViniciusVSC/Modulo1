@@ -1,0 +1,12 @@
+<!-- home.html -->
+<!--Para que a página filha herde o template base-->
+{% extends "base.html" %}
+<!--l criar uma estrutura que permita a inserção do conteúdo das
+páginas filhas na estrutura do arquivo base-->
+{% block content %}
+<!--Cria 3 paragrafos-->
+<p>Lembre-se de verificar corretamente os pedidos!</p>
+<p>Caso algum produto esteja inconsistente. Solicitar a alteração!</p>
+<p>Não realizamos a troca dos pedidos após a confeccão!</p>
+<!--Indica o fim de um bloco de conteúdo em um template HTML-->
+{% endblock %}

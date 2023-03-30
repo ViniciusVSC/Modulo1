@@ -1,0 +1,25 @@
+<!--pedidos.html-->
+<!--Cria a estrutura do html-->
+<html>
+  <head>
+    <!--Titulo da pagina-->
+    <title>Meu Restaurante</title>
+  </head>
+  <body>
+    <!--titulo de nivel1-->
+    <h1>Pedidos</h1>
+    <!--Cria uma lista-->
+    <ul>
+      <!--inicia um loop que percorre a lista de pedidos chamada "orders" 
+        e para cada item na lista, a variável "order" é definida para esse item-->
+      {% for order in orders %}
+      <!-- '{{ order }}'é usada para imprimir na página o valor da variável order, 
+        #que está sendo iterada pelo loop for no arquivo orders.html.-->
+      <li>{{ order }}</li>
+      <!--fim do loop for-->
+      {% endfor %}
+    </ul>
+    <!--link para a pagina inicial-->
+    <p>Voltar para <a href="/">página inicial</a>!</p>
+  </body>
+</html>

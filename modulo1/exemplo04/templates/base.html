@@ -1,0 +1,24 @@
+<!-- base.html -->
+<html>
+  <head>
+    <!-- define o título da página -->
+    <title>Meu Restaurante</title>
+  </head>
+  <body>
+    <!-- Titulo de nivel2-->
+    <h2>Meu Restaurante</h2>
+    <!--titulo de nivel3-->
+    <h3>Acesse o menu:</h3>
+    <!--cria uma lista-->
+    <ul>
+      <!-- link para a página de listagem de pedidos -->
+      <li><a href="pedidos">Listar Pedidos</a></li>
+      <!-- link para a página de listagem de clientes mas n leva a lugar nenhum -->
+      <li><a href="#">Listar Clientes</a></li>
+      <!-- link para a página de listagem de funcionários, tbm n leva a lugar nenhum -->
+      <li><a href="#">Listar Funcionários</a></li>
+    </ul>
+    <!-- cria um bloco que pode ser preenchido em arquivos filhos -->
+    <div id="content">{% block content %} {% endblock %}</div>
+  </body>
+</html>
